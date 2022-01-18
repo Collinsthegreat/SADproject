@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://banksystem-2.herokuapp.com/cards/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All cards - BankSystem</title>
+
+    <link rel="stylesheet" href="./All cards - BankSystem_files/vendor.min.css">
+
+    <link rel="stylesheet" href="./All cards - BankSystem_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./All cards - BankSystem_files/main.min.css">
+
+    
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="Home - BankSystem.html">Webanker</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item dropdown auto-dropdown">
+                            <a class="dropdown-toggle btn btn-primary" href="https://banksystem-2.herokuapp.com/cards/index#" role="button">
+                                Links
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://banksystem-demoshop.herokuapp.com/">
+                                    DemoShop
+                                </a>
+                                <a class="dropdown-item" href="https://banksystem-1.herokuapp.com/">
+                                    Test Bank 1
+                                </a>
+                                <a class="dropdown-item" href="https://banksystem-2.herokuapp.com/">
+                                    Test Bank 2
+                                </a>
+                                <a class="dropdown-item" href="https://github.com/banksystembg/BankSystem/">
+                                    GitHub
+                                </a>
+                            </div>
+                        </li>
+                    </ul> -->
+                        <ul class="navbar-nav mx-auto text-uppercase">
+                            <li class="nav-item dropdown auto-dropdown">
+                                <a class="nav-link dropdown-toggle" href="All cards - BankSystem.html#" role="button">
+                                    Cards
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="All cards - BankSystem.html">
+                                        Your Cards
+                                    </a>
+                                    <a class="dropdown-item" href="Create card - BankSystem.html">
+                                        Create new card
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown auto-dropdown">
+                                <a class="nav-link dropdown-toggle" href="All cards - BankSystem.html#" role="button">
+                                    Money transfers
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="Payment types - BankSystem.html">
+                                        New Transfer
+                                    </a>
+                                    <a class="dropdown-item" href="All payments - BankSystem.html">
+                                        Archives
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown auto-dropdown">
+                                <a class="nav-link dropdown-toggle" href="All cards - BankSystem.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user-circle"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <h5 class="dropdown-header">
+                                        abduljaliladamu9@gmail.com
+                                    </h5>
+                                    <a class="dropdown-item" href="Account settings - BankSystem.html">Settings</a>
+                                    <form class="form-inline" action="https://banksystem-2.herokuapp.com/account/logout?returnUrl=%2F" method="post">
+                                        <button type="submit" class="btn btn-link text-danger dropdown-item ">Logout</button>
+                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MR0jnewiQFAuZSaIQu8DkxvaUrBv8fWwY4bIoNHpWvCNuOeK1Bd7TZuBTGDwjh99cmpjzuEFJIiH_S6CdecO_Z5Dz1E8tFM5BsDr4umOrT4zgrbgy8JgfJxaeyOaY4zKkZLbco1VdgFiagMpfo4pQVDpuDol4NFZZnTxtsEyNAS_n1dUdNTsnfPgQPMx3bhWA"></form>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+    
+    <script>
+        (function() {
+            document.getElementById("cookieAcceptButton").addEventListener("click",
+                function(el) {
+                    document.cookie = el.target.dataset.cookieString;
+                    $("#cookieConsentBanner").alert('close');
+                },
+                false);
+        })();
+    </script>
+
+
+            
+
+
+    </header>
+
+    
+
+    <div class="container">
+        <main role="main" class="py-4">
+            
+
+<div class="container">
+        <div class="text-center">
+            <h3>You don't have any cards.</h3>
+            <a class="btn btn-primary mt-2" href="https://banksystem-2.herokuapp.com/cards/create">Create card</a>
+        </div>
+</div>
+
+<div class="fade modal" id="deleteModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Are you sure you want to delete this card?</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                <form method="post" action="https://banksystem-2.herokuapp.com/cards/delete">
+                    <input name="id" type="hidden">
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8MR0jnewiQFAuZSaIQu8DkxvaUrBv8fWwY4bIoNHpWvCNuOeK1Bd7TZuBTGDwjh99cmpjzuEFJIiH_S6CdecO_Z5Dz1E8tFM5BsDr4umOrT4zgrbgy8JgfJxaeyOaY4zKkZLbco1VdgFiagMpfo4pQVDpuDol4NFZZnTxtsEyNAS_n1dUdNTsnfPgQPMx3bhWA"></form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </main>
+    </div>
+
+    <script src="./All cards - BankSystem_files/vendor.min.js"></script>
+    <script src="./All cards - BankSystem_files/main.min.js"></script>
+
+
+    
+    <script>
+        $('#deleteModal').on('show.bs.modal',
+            function(event) {
+                const button = $(event.relatedTarget);
+                const key = button.data('id');
+                const modal = $(this);
+                modal.find('.modal-footer input[name=id]').val(key);
+            })
+    </script>
+
+
+
+</body></html>
