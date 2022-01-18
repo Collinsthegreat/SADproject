@@ -1,0 +1,41 @@
+.container{
+    width: 50%;
+    margin: auto;
+}
+form{
+    background: #fff;
+    border-left: 20px solid royalblue;
+    border-right: 20px solid royalblue;
+    border-radius: 12px;
+}
+form label{
+    display: block;
+    font-size: 2em;
+    color: #333;
+    padding-left: 18px;
+}
+form input[type="text"], form input[type="text"], form input[type="text"], form input[type="tel"]{
+    width: 100%;
+    font-size: 18px;
+    padding: 18px 10px;
+    margin: 6px 0;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid #300049;
+
+}
+form input[type="submit"]{
+    color: #fff;
+    background: royalblue;
+    border: none;
+    font-size: 2em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    font-size: 2em;
+    
+}
